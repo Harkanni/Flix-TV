@@ -116,7 +116,7 @@ header {
 /* MOVIE SLIDER*/
 section.movie-container .slider {
   border-radius: .5rem;
-  height: 20rem;
+  height: 30rem;
   background-position: center !important;;
   background-size: cover !important;
   padding: 2rem !important;
