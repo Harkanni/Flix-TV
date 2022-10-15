@@ -272,6 +272,9 @@ section.movie-container .slider {
 .catalogue a:hover p{
   color: #007bff;
 }
+.catalogue .img-box img {
+  object-fit: cover !important;
+}
 .catalogue a:hover img {
   filter: blur(10px)
 }
