@@ -23,14 +23,21 @@ menuClose.addEventListener("click", () => {
   sideBar.classList.remove("active")
 })
 
-// SELECTION CATALOGUE TAB
-const tabs = document.querySelectorAll(".nav-tab div")
-tabs.forEach((tab) => {
-	tab.addEventListener("click", () => {
-		tabs.forEach((tab)=>{
-			tab.classList.remove("active")
-		})
-		tab.classList.add("active")
-	})
-})
-console.log(tabs)
+// HEADER POSITION FIXING ON SMALLER SCREEN
+var bodyWidth = document.documentElement.offsetWidth;
+var htmlEle = document.documentElement
+var navEle = document.querySelector('header')
+var navHeight = navEle.offsetHeight
+var style = document.createElement("Style");
+if (bodyWidth <= 480 ) {
+	style.innerHTML = ` .movie-container {
+        margin-top: ${navHeight}px;
+    }`
+	htmlEle.appendChild(style)
+}
+if (bodyWidth >= 481 ) {
+	style.innerHTML = ` .movie-container {
+        margin-top: 0px;
+    }`
+}
+

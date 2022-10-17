@@ -16,8 +16,16 @@
   <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
   <link rel="stylesheet" type="text/css" href="./assets/styles/responsive.css">
 </head>
+<style type="text/css">
+  @media screen and (max-width: 480px){
+  /*   // HEADER NAV */
+    html {
+      scroll-padding-top: 1000px !important;
+    }
+  }
+</style>
 <body>
-  <header class="d-flex col-12 position-relative">
+  <header class="d-flex col-12">
      <nav class="header-container col-12">
       <div class="header d-flex col-12">
         <div class="menu col-8 d-flex">
@@ -33,7 +41,7 @@
         <div class="col-4 utilities">
           <div class="d-flex">
             <i class="fa fa-search"></i>
-            <a href="#">
+            <a href="./signup.html">
               <span>Sign in</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,12a1,1,0,0,0-1-1H11.41l2.3-2.29a1,1,0,1,0-1.42-1.42l-4,4a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l4,4a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L11.41,13H19A1,1,0,0,0,20,12ZM17,2H7A3,3,0,0,0,4,5V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V16a1,1,0,0,0-2,0v3a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V5A1,1,0,0,1,7,4H17a1,1,0,0,1,1,1V8a1,1,0,0,0,2,0V5A3,3,0,0,0,17,2Z"></path></svg>
             </a>
@@ -183,17 +191,17 @@
         <span>02</span>
         <p>Trending</p>
       </div>
-      <div>
+      <div class="live">
         <span>03</span>
-        <p>Live</p>
+        <p>Live</p> <span></span>
       </div>
       <div>
         <span>04</span>
-        <p>Sign In</p>
+        <a href="./signup.html" class="">Sign In</a>
       </div>
       <div>
         <span>05</span>
-        <p>Log In</p>
+        <a href="./signup.html">Log In</a>
       </div>
     </nav>
   </section>
@@ -284,7 +292,7 @@
               <img class="img-fluid" src="./assets/img/movie-2.jpg">
             </div>
             <div class="movie-detail mt-4">
-              <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+              <p class="font-weight-bold text-capitalize">LOU: Netflix special</p>
               <div class="d-flex">
                 <span>Free</span>
                 <span>Action</span>
@@ -303,7 +311,7 @@
               <img class="img-fluid" src="./assets/img/movie-3.jpg">
             </div>
             <div class="movie-detail mt-4">
-              <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+              <p class="font-weight-bold text-capitalize">Super 8</p>
               <div class="d-flex">
                 <span>Free</span>
                 <span>Action</span>
@@ -322,7 +330,7 @@
               <img class="img-fluid" src="./assets/img/movie-4.jpg">
             </div>
             <div class="movie-detail mt-4">
-              <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+              <p class="font-weight-bold text-capitalize">IP Man 3</p>
               <div class="d-flex">
                 <span>Free</span>
                 <span>Action</span>
@@ -341,7 +349,7 @@
               <img class="img-fluid" src="./assets/img/movie-5.jpg">
             </div>
             <div class="movie-detail mt-4">
-              <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+              <p class="font-weight-bold text-capitalize">Avengers: Endgame</p>
               <div class="d-flex">
                 <span>Free</span>
                 <span>Action</span>
@@ -360,7 +368,7 @@
               <img class="img-fluid" src="./assets/img/movie-6.jpg">
             </div>
             <div class="movie-detail mt-4">
-              <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+              <p class="font-weight-bold text-capitalize">Black Panther: Wakanda Forever</p>
               <div class="d-flex">
                 <span>Free</span>
                 <span>Action</span>
@@ -650,7 +658,7 @@
               <span>Tv channels</span>
             </div>
           </div>
-          <button class="btn bg-dark p-3 w-100 rounded"> Select plan </button>
+          <button class="btn bg-dark p-3 w-100 rounded redirect"> Select plan </button>
         </div>
         <div class="p-3 bg-dark mr-auto regular my-3">
           <p class="">Regular</p>
@@ -673,7 +681,7 @@
               <span>Tv channels</span>
             </div>
           </div>
-          <button class="btn bg-dark p-3 w-100 rounded"> Select plan </button>
+          <button class="btn bg-dark p-3 w-100 rounded redirect"> Select plan </button>
         </div>
         <div class="p-3 bg-dark premium-pro my-3">
           <p class="">Premium + Tv channels</p>
@@ -696,7 +704,7 @@
               <span>Tv channels</span>
             </div>
           </div>
-          <button class="btn bg-dark p-3 w-100 rounded"> Select plan </button>
+          <button class="btn bg-dark p-3 w-100 rounded redirect"> Select plan </button>
         </div>
       </div>
     </div>
@@ -815,6 +823,28 @@
     </div>
   </section>
 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Beta Mode</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="font-family: cursive;">
+          This feature is comin soon... <br>
+          don't forget to live a like <i class="fa fa-heart" style="color: red"></i><br>
+          You'd be redirected to the HOME PAGE IN <span class="timer">5s</span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer-container container pt-5" id="footer">
     <div class="footer-grid">
       <div>
@@ -870,6 +900,7 @@
    <script type="text/javascript" src="assets/bootstrap4/bootstrap.min.js"></script>
    <script type="text/javascript" src="assets/JS/owl.carousel.min.js"></script>
    <script type="text/javascript" src="assets/JS/main.js"></script>
+   <script type="text/javascript" src="assets/JS/signup.js"></script>
    <script type="text/javascript">
     // SUBSCRIPTION OWL CAROUSEL
     var subOwl = $(".sub-owl");

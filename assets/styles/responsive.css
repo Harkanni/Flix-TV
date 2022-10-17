@@ -5,6 +5,15 @@
 } */
 @media screen and (max-width: 480px){
 /*   // HEADER NAV */
+  html {
+    scroll-padding-top: 1000px !important;
+  }
+  header {
+    position: fixed !important;
+    top: 0;
+    z-index: 10000;
+    background-color: #131720 !important;
+  }
   header, .header {
     padding: 0px !important;
   }
@@ -14,7 +23,6 @@
   .header .utilities .d-flex {
     justify-content: end
   }
-  
 /*   // SLIDER */
   section.movie-container .slider {
     height: 15rem !important;
@@ -75,3 +83,33 @@
   }
 }
 
+/* //SIGN UP PAGE */
+@media (max-width: 480px){
+  form .socials i {
+    font-size: 25px;
+    padding: .8rem;
+    margin-left: 10px
+  }
+  form .socials .instagram, form .socials .linkedin {
+    padding-inline: .9rem !important;
+  }
+}
+@media (max-width: 354px){
+  body form {
+    padding: 1rem !important;
+  }
+  form .socials i {
+    font-size: 20px;
+    padding: .6rem;
+    margin-left: 10px
+  }
+  form .socials .instagram, form .socials .linkedin {
+    padding-inline: .7rem !important;
+  }
+  form .signup > div{
+    font-size: 13px
+  }
+  form .signup > div a {
+    font-weight: bold
+  }
+}
