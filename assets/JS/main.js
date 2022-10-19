@@ -30,13 +30,13 @@ var navEle = document.querySelector('header')
 var navHeight = navEle.offsetHeight
 var style = document.createElement("Style");
 if (bodyWidth <= 480 ) {
-	style.innerHTML = ` .movie-container {
+	style.innerHTML = ` .movie-container, .sideBar-container {
         margin-top: ${navHeight}px;
     }`
 	htmlEle.appendChild(style)
 }
 if (bodyWidth >= 481 ) {
-	style.innerHTML = ` .movie-container {
+	style.innerHTML = ` .movie-container, .sideBar-container {
         margin-top: 0px;
     }`
 }
