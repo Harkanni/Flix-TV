@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Playing....</title>
+  <meta charset="utf-8">
+  <meta property="og:title" content="Flix Tv Created by Emmanuel" />    
+  <meta property="og:description" content="FlixTv  - Hosted ON GITHUB" />   
+  <meta property="og:image" content="./assets/img/SS-1.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" type="image/png" href="assets/icon/favicon-32x32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/icon/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/FortAwesome-Font-Awesome-fcec2d1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/bootstrap4/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/responsive.css">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/movie.css">
+</head>
+<style type="text/css">
+	html {
+		scroll-behavior: smooth !important;
+	}
+</style>
+<body>
+	<header class="d-flex col-12">
+     <nav class="header-container col-12">
+      <div class="header d-flex col-12">
+        <div class="menu col-8 d-flex">
+          <div class="menu-bar">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+            <span class="bar bar-3"></span>
+          </div>
+          <a href="#">
+            <img src="./assets/img/logo.svg">
+          </a>
+        </div>
+        <div class="col-4 utilities">
+          <div class="d-flex">
+            <i class="fa fa-search"></i>
+            <a href="./signup.html">
+              <span>Sign in</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,12a1,1,0,0,0-1-1H11.41l2.3-2.29a1,1,0,1,0-1.42-1.42l-4,4a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l4,4a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L11.41,13H19A1,1,0,0,0,20,12ZM17,2H7A3,3,0,0,0,4,5V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V16a1,1,0,0,0-2,0v3a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V5A1,1,0,0,1,7,4H17a1,1,0,0,1,1,1V8a1,1,0,0,0,2,0V5A3,3,0,0,0,17,2Z"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+     </nav>
+     <form class="form-search d-block position-absolute" style="">
+      <div class="input">
+        <input type="text" name="" id="search" placeholder="Siri dey for you">
+        <label for="search">
+         <i class="fa fa-search"></i>
+        </label>
+      </div>
+      <i class="fa fa-window-close close-modal"></i>
+     </form>
+  </header>
+
+    <section class="sideBar-container">
+	    <i class="fa fa-window-close"></i>
+	    <nav>
+	      <a href="./index.html">
+	        <span>01</span>
+	        <p>Home</p>
+	      </a>
+	      <a href="./index.html">
+	        <span>02</span>
+	        <p>Trending</p>
+	      </a>
+	      <a href="./index.html" class="live">
+	        <span>03</span>
+	        <p>Live</p> <span></span>
+	      </a>
+	      <div>
+	        <span>04</span>
+	        <a href="./signup.html" class="">Sign In</a>
+	      </div>
+	      <div>
+	        <span>05</span>
+	        <a href="./signup.html">Log In</a>
+	      </div>
+	    </nav>
+	  </section>
+
+  <section class="movie-summary-container d-flex align-items-end col-lg-12" style="background: linear-gradient(rgba(0,0,0,.5), #131720 100%), url(./assets/img/bg2.jpg)">
+  	<div class="summary container">
+  		<a href="#" class="p-2 play-icon d-flex ml-5">
+	      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	    	<span>Trailer</span>
+  		</a>
+  		<div class="summary-details">
+  			<h1>The fast and Furious</h1>
+  			<div class="d-flex align-items-center" style="gap: 1rem">
+  				<div class="movie-adds d-flex">
+	          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68A1,1,0,0,0,6.9,21.44L12,18.77l5.1,2.67a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.88l.72,4.2-3.76-2a1.06,1.06,0,0,0-.94,0l-3.76,2,.72-4.2a1,1,0,0,0-.29-.88l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"></path></svg>
+	          <span>9.8</span>
+	        </div>
+	        <span class="span"></span>
+					<div>Action</div>
+					<span class="span"></span>
+					<div>2021</div>
+					<span class="span"></span>
+					<div>1hr 42 min</div>
+					<span class="span"></span>
+					<div>16+</div>
+  			</div>
+  		 </div>
+  		 <div class="summary-text my-4">
+  		 		<p>
+  		 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  		 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  		 		</p>
+  		</div>
+  	</div>
+  </section>
+
+  <section class="video-container container">
+  	<div class="video">
+  		<video id="player" playsinline controls data-poster="./assets/img/hotel-diablo.jpg">
+			  <source src="./assets/videoplayback.mp4" type="video/mp4" />
+			  <source src="./assets/videoplayback.mp4" type="video/webm" />
+			</video>
+			<div class="controls d-flex my-3 justify-content-between">
+				<div div class="d-flex" style="gap: .5rem">
+					<div class="d-flex">
+						<i class="fa fa-download"></i>
+						<span>Download:</span>
+					</div>
+					<span>480P</span>
+					<span>720p</span>
+					<span>1080p</span>
+					<span>4k</span>
+				</div>
+				<div class="bookmark d-flex">
+					<i class="fa fa-bookmark"></i>
+				</div>
+			</div>
+  	</div>
+  </section>
+
+   <section class="season-container tv-originals-container p-5" id="tv">
+	    <div class="season-title d-flex align-items-center">
+	  		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9,10a1,1,0,0,0-1,1v2a1,1,0,0,0,2,0V11A1,1,0,0,0,9,10Zm12,1a1,1,0,0,0,1-1V6a1,1,0,0,0-1-1H3A1,1,0,0,0,2,6v4a1,1,0,0,0,1,1,1,1,0,0,1,0,2,1,1,0,0,0-1,1v4a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V14a1,1,0,0,0-1-1,1,1,0,0,1,0-2ZM20,9.18a3,3,0,0,0,0,5.64V17H10a1,1,0,0,0-2,0H4V14.82A3,3,0,0,0,4,9.18V7H8a1,1,0,0,0,2,0H20Z"></path></svg>
+	  		<span class="ml-2">1st Season</span>
+	  	</div>
+
+	    <div class="carousel-box my-3">
+	      <div class="owl-carousel owl-theme sub-owl">
+	        <div class="tv-show">
+	          <img src="assets/img/image-10.jpg">
+	          <div class="tv-show-control">
+	            <div class=" p-2 play-icon">
+	              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	            </div>
+	            <span>5:33</span>
+	          </div>
+	          <div class="movie-detail mt-4">
+	            <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+	          </div>
+	        </div>
+
+	        <div class="tv-show">
+	          <img src="assets/img/image-10.jpg">
+	          <div class="tv-show-control">
+	            <div class=" p-2 play-icon">
+	              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	            </div>
+	            <span>5:33</span>
+	          </div>
+	          <div class="movie-detail mt-4">
+	            <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+	          </div>
+	        </div>
+
+	        <div class="tv-show">
+	          <img src="assets/img/image-10.jpg">
+	          <div class="tv-show-control">
+	            <div class=" p-2 play-icon">
+	              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	            </div>
+	            <span>5:33</span>
+	          </div>
+	          <div class="movie-detail mt-4">
+	            <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+	          </div>
+	        </div>
+
+	        <div class="tv-show">
+	          <img src="assets/img/image-10.jpg">
+	          <div class="tv-show-control">
+	            <div class=" p-2 play-icon">
+	              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	            </div>
+	            <span>5:33</span>
+	          </div>
+	          <div class="movie-detail mt-4">
+	            <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+	          </div>
+	        </div>
+
+	        <div class="tv-show">
+	          <img src="assets/img/image-10.jpg">
+	          <div class="tv-show-control">
+	            <div class=" p-2 play-icon">
+	              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	            </div>
+	            <span>5:33</span>
+	          </div>
+	          <div class="movie-detail mt-4">
+	            <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+	          </div>
+	        </div>
+
+	        <div class="tv-show">
+	          <img src="assets/img/image-10.jpg">
+	          <div class="tv-show-control">
+	            <div class=" p-2 play-icon">
+	              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	            </div>
+	            <span>5:33</span>
+	          </div>
+	          <div class="movie-detail mt-4">
+	            <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+	          </div>
+	        </div>
+
+	        <div class="tv-show">
+	          <img src="assets/img/image-10.jpg">
+	          <div class="tv-show-control">
+	            <div class=" p-2 play-icon">
+	              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	            </div>
+	            <span>5:33</span>
+	          </div>
+	          <div class="movie-detail mt-4">
+	            <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+	          </div>
+	        </div>
+
+	        <div class="tv-show">
+	          <img src="assets/img/image-10.jpg">
+	          <div class="tv-show-control">
+	            <div class=" p-2 play-icon">
+	              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	            </div>
+	            <span>5:33</span>
+	          </div>
+	          <div class="movie-detail mt-4">
+	            <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+
+	    <div class="genres my-4">
+	    	<h2>Genres</h2>
+	    	<div class="d-flex ">
+	    		<a href="#">action</a>
+		    	<a href="#">Thriller</a>
+		    	<a href="#">Crime</a>
+	    	</div>    	
+	    </div>
+
+	    <div class="share genres">
+	    	<h2>Share</h2>
+	    	<div class="d-flex ">
+	    		<a href="#">
+	    			<i class="fab fa-twitter"></i>
+	    		</a>
+		    	<a href="#">
+		    		<i class="fab fa-facebook"></i>
+		    	</a>
+		    	<a href="#">
+		    		<i class="fab fa-instagram"></i>
+		    	</a>
+	    	</div>    	
+	    </div>
+  </section>
+
+  <section class="comment-section-container container py-5">
+  	<!-- TAB NAVS -->
+  	<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+		  <li class="nav-item" role="presentation">
+		    <div class="nav-link active d-flex" id="pills-home-tab" data-toggle="pill" data-target="#comments-section" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+		    	<P class="mb-0">Comments</P>
+		    	<span>10</span>
+		    </div>
+		  </li>
+		  <li class="nav-item" role="presentation">
+		    <div class="nav-link d-flex" id="pills-profile-tab" data-toggle="pill" data-target="#reviews-section" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+		    	<p class="mb-0">Reviews</p>
+		    	<span>12</span>
+		    </div>
+		  </li>
+		</ul>
+		<div class="tab-content" id="pills-tabContent">
+		  <div class="tab-pane fade show active" id="comments-section" role="tabpanel" aria-labelledby="pills-home-tab" >
+		  	<div class=" d-flex align-items-end" style="flex-direction: column;">
+		  		<!-- MESSAGE TEXT -->
+			  	<div class="message-box col-12 mb-3 message">
+			  		<div class="message-box-header d-flex">
+			  			<i class="fas fa-user"></i>
+			  			<div>
+			  				<span class="d-block">Brian Cranston</span>
+			  				<span class="post-time">30.08.2021, 17:53</span>
+			  			</div>
+			  		</div>
+			  		<div class="message-box-body my-4">
+			  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			  			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			  			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			  			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  		</div>
+			  		<div class="message-box-footer d-flex justify-content-between align-items-center">
+			  			<div class="d-flex align-items-center" style="gap: 10px">
+			  				<div class="d-flex align-items-center plus" style="gap: 5px">
+			  					<span>7</span>
+			  					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 7.3273V14.6537" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.6667 10.9905H7.33333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+			  				</div>
+			  				<div class="d-flex align-items-center minus" style="gap: 5px">
+			  					<span>12</span>
+			  					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.6667 10.9905H7.33333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+			  				</div>
+			  			</div>
+			  			<div class="d-flex align-items-center" style="gap:10px">
+			  				<a href="#text-box" class="reply">
+			  					<i class="fa fa-reply"></i>
+				  				<span>reply</span>
+			  				</a>
+			  				<a href="#text-box" class="reply-quote">
+			  					<i class="fa fa-retweet"></i>
+				  				<span>Quote</span>
+			  				</a>
+			  			</div>
+			  		</div>
+			  	</div>
+			  	<!-- MESSAGE TEXT END -->
+
+			  	<!-- UNQUOTED TEXT -->
+			  	<div class="quoted-text-box col-sm-12 col-lg-11 mb-3 reply">
+			  		<div class="quoted-text-box-header d-flex">
+			  			<i class="fas fa-user"></i>
+			  			<div>
+			  				<span class="d-block">Brian Cranston</span>
+			  				<span class="post-time">30.08.2021, 17:53</span>
+			  			</div>
+			  		</div>
+			  		<div class="quoted-text-box-body my-3">
+			  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			  			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			  			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			  			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  		</div>
+			  		<div class="quoted-text-box-footer d-flex justify-content-between align-items-center">
+			  			<div class="d-flex align-items-center" style="gap: 10px">
+			  				<div class="d-flex align-items-center plus" style="gap: 5px">
+			  					<span>7</span>
+			  					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 7.3273V14.6537" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.6667 10.9905H7.33333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+			  				</div>
+			  				<div class="d-flex align-items-center minus" style="gap: 5px">
+			  					<span>12</span>
+			  					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.6667 10.9905H7.33333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+			  				</div>
+			  			</div>
+			  			<div class="d-flex align-items-center" style="gap:10px">
+			  				<a href="#text-box" class="reply">
+			  					<i class="fa fa-reply"></i>
+				  				<span>reply</span>
+			  				</a>
+			  				<a href="#text-box" class="reply-quote">
+			  					<i class="fa fa-retweet"></i>
+				  				<span>Quote</span>
+			  				</a>
+			  			</div>
+			  		</div>
+			  	</div>
+			  	<!-- END OF UNQUOTED TEXT -->
+
+			  	<!-- UNQUOTED TEXT -->
+			  	<div class="quoted-text-box col-sm-12 col-lg-11 mb-3 reply">
+			  		<div class="quoted-text-box-header d-flex">
+			  			<i class="fas fa-user"></i>
+			  			<div>
+			  				<span class="d-block">Brian Cranston</span>
+			  				<span class="post-time">30.08.2021, 17:53</span>
+			  			</div>
+			  		</div>
+			  		<div class="quoted-text-box-body my-3">
+			  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			  			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			  			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			  			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  		</div>
+			  		<div class="quoted-text-box-footer d-flex justify-content-between align-items-center">
+			  			<div class="d-flex align-items-center" style="gap: 10px">
+			  				<div class="d-flex align-items-center plus" style="gap: 5px">
+			  					<span>7</span>
+			  					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 7.3273V14.6537" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.6667 10.9905H7.33333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+			  				</div>
+			  				<div class="d-flex align-items-center minus" style="gap: 5px">
+			  					<span>12</span>
+			  					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.6667 10.9905H7.33333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+			  				</div>
+			  			</div>
+			  			<div class="d-flex align-items-center" style="gap:10px">
+			  				<a href="#text-box" class="reply">
+			  					<i class="fa fa-reply"></i>
+				  				<span>reply</span>
+			  				</a>
+			  				<a href="#text-box" class="reply-quote">
+			  					<i class="fa fa-retweet"></i>
+				  				<span>Quote</span>
+			  				</a>
+			  			</div>
+			  		</div>
+			  	</div>
+			  	<!-- END OF UNQUOTED TEXT -->
+
+			  	<!-- QUOTED TEXT -->
+			  	<div class="quoted-text-box col-sm-12 col-lg-11 mb-3 reply">
+			  		<div class="quoted-text-box-header d-flex">
+			  			<i class="fas fa-user"></i>
+			  			<div>
+			  				<span class="d-block">Brian Cranston</span>
+			  				<span class="post-time">30.08.2021, 17:53</span>
+			  			</div>
+			  		</div>
+			  		<div class="quoted-text p-3 mt-4" style="background: #131720; border-radius: 1rem">
+			  			<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
+			  		</div>
+			  		<div class="quoted-text-box-body my-3">
+			  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			  			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			  			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			  			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  		</div>
+			  		<div class="quoted-text-box-footer d-flex justify-content-between align-items-center">
+			  			<div class="d-flex align-items-center" style="gap: 10px">
+			  				<div class="d-flex align-items-center plus" style="gap: 5px">
+			  					<span>7</span>
+			  					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 7.3273V14.6537" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.6667 10.9905H7.33333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+			  				</div>
+			  				<div class="d-flex align-items-center minus" style="gap: 5px">
+			  					<span>12</span>
+			  					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.6667 10.9905H7.33333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+			  				</div>
+			  			</div>
+			  			<div class="d-flex align-items-center" style="gap:10px">
+			  				<a href="#text-box" class="reply">
+			  					<i class="fa fa-reply"></i>
+				  				<span>reply</span>
+			  				</a>
+			  				<a href="#text-box" class="reply-quote">
+			  					<i class="fa fa-retweet"></i>
+				  				<span>Quote</span>
+			  				</a>
+			  			</div>
+			  		</div>
+			  	</div>
+			  	<!-- QUOTED TEXT END -->
+
+			  	<!-- MESSAGE TEXT -->
+			  	<div class="message-box col-12 mb-3 message">
+			  		<div class="message-box-header d-flex">
+			  			<i class="fas fa-user"></i>
+			  			<div>
+			  				<span class="d-block">Brian Cranston</span>
+			  				<span class="post-time">30.08.2021, 17:53</span>
+			  			</div>
+			  		</div>
+			  		<div class="message-box-body my-4">
+			  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			  			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			  			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			  			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  		</div>
+			  		<div class="message-box-footer d-flex justify-content-between align-items-center">
+			  			<div class="d-flex align-items-center" style="gap: 10px">
+			  				<div class="d-flex align-items-center plus" style="gap: 5px">
+			  					<span>7</span>
+			  					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 7.3273V14.6537" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.6667 10.9905H7.33333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+			  				</div>
+			  				<div class="d-flex align-items-center minus" style="gap: 5px">
+			  					<span>12</span>
+			  					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.6667 10.9905H7.33333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+			  				</div>
+			  			</div>
+			  			<div class="d-flex align-items-center" style="gap:10px">
+			  				<a href="#text-box" class="reply">
+			  					<i class="fa fa-reply"></i>
+				  				<span>reply</span>
+			  				</a>
+			  				<a href="#text-box" class="reply-quote">
+			  					<i class="fa fa-retweet"></i>
+				  				<span>Quote</span>
+			  				</a>
+			  			</div>
+			  		</div>
+			  	</div>
+			  	<!-- MESSAGE TEXT END -->
+
+
+			  	<!-- BOTTOM NAV -->
+			  	<div class="selection-catalogue-container w-100 mb-5">
+				  	<div class="bottom-nav selection-catalogue">
+				      <div class="d-flex justify-content-between align-items-center">
+				        <div class="list-size">
+				          <span>12</span> from <span>144</span>
+				        </div>
+				        <div class="navigation d-flex">
+				          <button class="btn">
+				            <i class="fa fa-arrow-left"></i>
+				          </button>
+				          <button class="btn extra">1</button>
+				          <button class="btn extra active">2</button>
+				          <button class="btn extra">3</button>
+				          <button class="btn extra">4</button>
+				          <button class="btn rounded">
+				            <i class="fa fa-arrow-right"></i>
+				          </button>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+
+			  	<!-- ADD COMMENT -->
+			  	<form class="add-comment p-3 col-12" onsubmit="return false">
+			  		<div class="form-group">
+			  			<textarea id="text-box" class="form-control col-12" placeholder="Add Comment"></textarea>
+			  			<button class="btn bg-primary">Submit</button>
+			  		</div>
+			  	</form>
+			  	<!-- END -->
+		  	</div>
+		  </div>
+		  <!-- REVIEW TAB -->
+		  <div class="tab-pane fade" id="reviews-section" role="tabpanel" aria-labelledby="pills-profile-tab">
+		  	<div>
+		  		<!-- REVIEW TEXT -->
+			  	<div class="message-box col-12 mb-3 message">
+			  		<div class="message-box-header d-flex justify-content-between">
+			  			<div class="d-flex" style="gap: 10px">
+			  				<i class="fas fa-user"></i>
+				  			<div>
+				  				<span class="d-block">Brian Cranston</span>
+				  				<span class="post-time">30.08.2021, 17:53</span>
+				  			</div>
+			  			</div>
+				  		<div class="message-star">
+				  			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68A1,1,0,0,0,6.9,21.44L12,18.77l5.1,2.67a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.88l.72,4.2-3.76-2a1.06,1.06,0,0,0-.94,0l-3.76,2,.72-4.2a1,1,0,0,0-.29-.88l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"></path></svg>
+				  		</div>
+			  		</div>
+			  		<div class="message-box-body my-4">
+			  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			  			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			  			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			  			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  		</div>
+			  	</div>
+			  	<!-- REVIEW TEXT END -->
+
+			  	<!-- REVIEW TEXT -->
+			  	<div class="message-box col-12 mb-3 message">
+			  		<div class="message-box-header d-flex justify-content-between">
+			  			<div class="d-flex" style="gap: 10px">
+			  				<i class="fas fa-user"></i>
+				  			<div>
+				  				<span class="d-block">Brian Cranston</span>
+				  				<span class="post-time">30.08.2021, 17:53</span>
+				  			</div>
+			  			</div>
+				  		<div class="message-star">
+				  			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68A1,1,0,0,0,6.9,21.44L12,18.77l5.1,2.67a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.88l.72,4.2-3.76-2a1.06,1.06,0,0,0-.94,0l-3.76,2,.72-4.2a1,1,0,0,0-.29-.88l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"></path></svg>
+				  		</div>
+			  		</div>
+			  		<div class="message-box-body my-4">
+			  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			  			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			  			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			  			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  		</div>
+			  	</div>
+			  	<!-- REVIEW TEXT END -->
+
+			  	<!-- REVIEW TEXT -->
+			  	<div class="message-box col-12 mb-3 message">
+			  		<div class="message-box-header d-flex justify-content-between">
+			  			<div class="d-flex" style="gap: 10px">
+			  				<i class="fas fa-user"></i>
+				  			<div>
+				  				<span class="d-block">Brian Cranston</span>
+				  				<span class="post-time">30.08.2021, 17:53</span>
+				  			</div>
+			  			</div>
+				  		<div class="message-star">
+				  			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68A1,1,0,0,0,6.9,21.44L12,18.77l5.1,2.67a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.88l.72,4.2-3.76-2a1.06,1.06,0,0,0-.94,0l-3.76,2,.72-4.2a1,1,0,0,0-.29-.88l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"></path></svg>
+				  		</div>
+			  		</div>
+			  		<div class="message-box-body my-4">
+			  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			  			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			  			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			  			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  		</div>
+			  	</div>
+			  	<!-- REVIEW TEXT END -->
+		  	</div>
+
+		  	<!-- ADD A REVIEW -->
+			  	<form class="add-comment p-3 col-12" onsubmit="return false">
+			  		<div class="form-group">
+			  			<textarea id="text-box" class="form-control col-12" placeholder="Add Comment"></textarea>
+			  			<button class="btn bg-primary">Submit</button>
+			  		</div>
+			  	</form>
+			  	<!-- END -->
+		  </div>
+		</div>
+  </section>
+
+  <section class="similar-movies-container container">
+  	<div class="subscription-container container" id="sub">
+	    <h2 class="mb-3">Similar Movies and Tv Series</h2>
+	    <div class="owl-carousel owl-theme sub-owl">
+	      <div class="catalogue ">
+	          <a href="#" class="">
+	            <div class="card-box">
+	              <div class="img-box">
+	                <img class="img-fluid" src="./assets/img/movie-5.jpg">
+	              </div>
+	              <div class="movie-detail mt-4">
+	                <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+	                <div class="d-flex">
+	                  <span>Free</span>
+	                  <span>Action</span>
+	                  <span>2021</span>
+	                </div>
+	              </div>
+	            </div>
+	            <div class=" p-2 play-icon">
+	              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	            </div>
+	          </a>
+	      </div>
+
+	       <div class="catalogue ">
+	          <a href="#" class="">
+	            <div class="card-box">
+	              <div class="img-box">
+	                <img class="img-fluid" src="./assets/img/movie-5.jpg">
+	              </div>
+	              <div class="movie-detail mt-4">
+	                <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+	                <div class="d-flex">
+	                  <span>Free</span>
+	                  <span>Action</span>
+	                  <span>2021</span>
+	                </div>
+	              </div>
+	            </div>
+	            <div class=" p-2 play-icon">
+	              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	            </div>
+	          </a>
+	      </div>
+
+	      <div class="catalogue ">
+	          <a href="#" class="">
+	            <div class="card-box">
+	              <div class="img-box">
+	                <img class="img-fluid" src="./assets/img/movie-5.jpg">
+	              </div>
+	              <div class="movie-detail mt-4">
+	                <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+	                <div class="d-flex">
+	                  <span>Free</span>
+	                  <span>Action</span>
+	                  <span>2021</span>
+	                </div>
+	              </div>
+	            </div>
+	            <div class=" p-2 play-icon">
+	              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	            </div>
+	          </a>
+	      </div>
+
+	      <div class="catalogue ">
+	          <a href="#" class="">
+	            <div class="card-box">
+	              <div class="img-box">
+	                <img class="img-fluid" src="./assets/img/movie-5.jpg">
+	              </div>
+	              <div class="movie-detail mt-4">
+	                <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+	                <div class="d-flex">
+	                  <span>Free</span>
+	                  <span>Action</span>
+	                  <span>2021</span>
+	                </div>
+	              </div>
+	            </div>
+	            <div class=" p-2 play-icon">
+	              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	            </div>
+	          </a>
+	      </div>
+
+	      <div class="catalogue ">
+	          <a href="#" class="">
+	            <div class="card-box">
+	              <div class="img-box">
+	                <img class="img-fluid" src="./assets/img/movie-5.jpg">
+	              </div>
+	              <div class="movie-detail mt-4">
+	                <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+	                <div class="d-flex">
+	                  <span>Free</span>
+	                  <span>Action</span>
+	                  <span>2021</span>
+	                </div>
+	              </div>
+	            </div>
+	            <div class=" p-2 play-icon">
+	              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	            </div>
+	          </a>
+	      </div>
+
+	      <div class="catalogue ">
+	          <a href="#" class="">
+	            <div class="card-box">
+	              <div class="img-box">
+	                <img class="img-fluid" src="./assets/img/movie-5.jpg">
+	              </div>
+	              <div class="movie-detail mt-4">
+	                <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+	                <div class="d-flex">
+	                  <span>Free</span>
+	                  <span>Action</span>
+	                  <span>2021</span>
+	                </div>
+	              </div>
+	            </div>
+	            <div class=" p-2 play-icon">
+	              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	            </div>
+	          </a>
+	      </div>
+
+	      <div class="catalogue ">
+	          <a href="#" class="">
+	            <div class="card-box">
+	              <div class="img-box">
+	                <img class="img-fluid" src="./assets/img/movie-5.jpg">
+	              </div>
+	              <div class="movie-detail mt-4">
+	                <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+	                <div class="d-flex">
+	                  <span>Free</span>
+	                  <span>Action</span>
+	                  <span>2021</span>
+	                </div>
+	              </div>
+	            </div>
+	            <div class=" p-2 play-icon">
+	              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	            </div>
+	          </a>
+	      </div>
+
+	      <div class="catalogue ">
+	          <a href="#" class="">
+	            <div class="card-box">
+	              <div class="img-box">
+	                <img class="img-fluid" src="./assets/img/movie-5.jpg">
+	              </div>
+	              <div class="movie-detail mt-4">
+	                <p class="font-weight-bold text-capitalize">Dr Strange: in the multiverse of madness</p>
+	                <div class="d-flex">
+	                  <span>Free</span>
+	                  <span>Action</span>
+	                  <span>2021</span>
+	                </div>
+	              </div>
+	            </div>
+	            <div class=" p-2 play-icon">
+	              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 1C16.5228 1 21 5.47716 21 11C21 16.5228 16.5228 21 11 21C5.47716 21 1 16.5228 1 11C1 5.47716 5.47716 1 11 1Z" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0501 11.4669C13.3211 12.2529 11.3371 13.5829 10.3221 14.0099C10.1601 14.0779 9.74711 14.2219 9.65811 14.2239C9.46911 14.2299 9.28711 14.1239 9.19911 13.9539C9.16511 13.8879 9.06511 13.4569 9.03311 13.2649C8.93811 12.6809 8.88911 11.7739 8.89011 10.8619C8.88911 9.90489 8.94211 8.95489 9.04811 8.37689C9.07611 8.22089 9.15811 7.86189 9.18211 7.80389C9.22711 7.69589 9.30911 7.61089 9.40811 7.55789C9.48411 7.51689 9.57111 7.49489 9.65811 7.49789C9.74711 7.49989 10.1091 7.62689 10.2331 7.67589C11.2111 8.05589 13.2801 9.43389 14.0401 10.2439C14.1081 10.3169 14.2951 10.5129 14.3261 10.5529C14.3971 10.6429 14.4321 10.7519 14.4321 10.8619C14.4321 10.9639 14.4011 11.0679 14.3371 11.1549C14.3041 11.1999 14.1131 11.3999 14.0501 11.4669Z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+	            </div>
+	          </a>
+	      </div>
+	    </div>
+	  </div>
+  </section>
+
+  <footer class="footer-container container pt-5" id="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-column-title mb-2">Flix Tv</div>
+        <div>About us</div>
+        <div>My Profile</div>
+        <div>Pricing plans</div>
+        <div>Contact</div>
+      </div>
+      <div>
+        <div class="footer-column-title mb-2">Browse</div>
+        <div>Live Tv</div>
+        <div>Live News</div>
+        <div>Live Sports</div>
+        <div>Streaming Library</div>
+      </div>
+      <div>
+        <div class="footer-column-title mb-2 invisible">Empty slot</div>
+        <div>Tv Shows</div>
+        <div>Movies</div>
+        <div>Kids</div>
+        <div>Collections</div>
+      </div>
+      <div>
+        <div class="footer-column-title mb-2">Help</div>
+        <div>Account and Billing</div>
+        <div>Plans and Pricing</div>
+        <div>Supported Devices</div>
+        <div>Accessibility</div>
+      </div>
+    </div>
+    <div class="footer-social-container col-sm-12 col-lg-3 my-2 mb-5 p-0">
+      <p class=""><span>Flix</span>Tv</p>
+      <span class="">Movies & Tv shows, Online cinema, Movie database HTML Template.</span>
+      <div class="footer-social">
+        <i class="fab fa-facebook facebook"></i>
+        <i class="fab fa-twitter twitter"></i>
+        <i class="fab fa-instagram instagram"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <span>&copy;FlixTv.template, 2021. Created by Akanni Emmanuel</span>
+      <span>
+        <span class="mr-3">Privacy policy</span>
+        <span>Terms and conditions</span>
+      </span>
+    </div>
+  </footer>
+
+
+	 <script type="text/javascript" src="assets/JS/jquery-3.5.1.min.js"></script>
+   <script type="text/javascript" src="assets/bootstrap4/popper.js"></script>
+   <script type="text/javascript" src="assets/bootstrap4/bootstrap.min.js"></script>
+   <script type="text/javascript" src="assets/JS/owl.carousel.min.js"></script>
+   <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+   <script type="text/javascript" src="assets/JS/main.js"></script>
+   <script type="text/javascript" src="assets/JS/movie.js"></script>
+   <script type="text/javascript">
+   	var subOwl = $(".sub-owl");
+      // console.log("this is owl: ", subOwl)
+      subOwl.owlCarousel({
+      nav: true,
+      items: 5,
+      // navText: ["<i class='fa fa-arrow-left'></i>", "<i class='fa fa-arrow-right'></i>"],
+      dots: true,
+      autoplay: false,
+      autoplayHoverPause: true,
+      loop: false,
+      smartSpeed: 1000,
+      margin: 10,
+      stagePadding: 20,
+      responsive: {
+        320: {
+          items: 1,
+          margin: 10,
+          stagePadding: 0,
+        },
+        780: {
+          items: 3
+        }
+      }
+    })
+   </script>
+
+</body>
+</html>

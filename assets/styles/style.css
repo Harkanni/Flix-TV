@@ -8,7 +8,7 @@ body {
   height: 100%;
   color: #fff;
   font-family: "Josefin Sans" !important;
-  position: relative
+  position: relative;
 }
 header {
   height: 70px;
@@ -16,7 +16,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden
+  overflow: hidden;
+  z-index: 1000000000000000000000 !important;
 }
 
 .menu-bar {
@@ -202,20 +203,27 @@ section.movie-container .slider {
 .sideBar-container.active{
   transform: translateX(0%)
 }
-.sideBar-container nav div{
+.sideBar-container nav a{
   margin-bottom: 3em;
   display: flex;
-  justify-content: start;
   align-items: center;
   gap: 10px;
-  text-align: left
+  color: #fff;
+  text-decoration: none;
 }
-.sideBar-container nav div p {
+.sideBar-container nav a p {
   margin: 0;
   color: #fff !important;
 }
-.sideBar-container nav div a {
+.sideBar-container nav > div {
+  display: flex;
+  gap: 10px;
+}
+.sideBar-container nav > div a {
   color: #fff !important;
+}
+.sideBar-container nav > div span {
+  transform: translateY(-.2rem)
 }
 .sideBar-container nav span {
   font-weight: bold;
