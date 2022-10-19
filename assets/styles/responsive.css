@@ -113,3 +113,38 @@
     font-weight: bold
   }
 }
+
+/* //MOVIE PAGE */
+@media screen and (max-width: 480px) {
+  .movie-summary-container {
+    min-height: 600px !important;
+    padding-inline: .2rem !important;
+  }
+  .summary-details > div {
+    gap: .4rem !important;
+  }
+  .summary-text {
+    text-align: justify
+  }
+}
+@media screen and (max-width: 465px) {
+  body .video-container .video .plyr {
+    border-radius: .5rem !important;
+  }
+  .video-container .controls {
+    display: block !important;
+  }
+  .video-container .controls > div:first-of-type{
+    gap: .5rem !important;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5rem
+  }
+  .video-container .controls .bookmark {
+    justify-content: center
+  }
+  .video-container .controls {
+    align-items: center;
+    justify-content: center !important;
+  }
+}

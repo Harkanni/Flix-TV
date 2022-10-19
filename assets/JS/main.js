@@ -41,3 +41,13 @@ if (bodyWidth >= 481 ) {
     }`
 }
 
+// HANDLING NAVIGATION
+var tests = document.querySelectorAll("div[data-to]")
+
+tests.forEach((test) => {
+  test.addEventListener("click", () => {
+    window.location = test.getAttribute("data-to")
+  })
+})
+
+

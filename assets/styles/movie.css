@@ -1,0 +1,211 @@
+.movie-summary-container {
+  min-height: 500px;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.movie-summary-container .summary {
+  margin: 0 auto
+}
+.movie-summary-container .play-icon {
+  gap: 1.2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0 2rem !important;
+  
+}
+.movie-summary-container .play-icon svg, .movie-summary-container .play-icon span {
+  transition: .5s ease;
+  transition-property: stroke, color
+}
+.movie-summary-container .play-icon:hover svg, .movie-summary-container .play-icon:hover span{
+  stroke: #2f80ed;
+  color: #2f80ed;
+}
+.movie-summary-container .play-icon svg {
+  stroke: #fff;
+  transform: scale(2)
+}
+.movie-summary-container .summary h1 {
+  text-transform: capitalize
+}
+
+.movie-summary-container .summary-details svg{
+  fill: #fff;
+  height: 17px;
+  vertical-align: -2.5px  
+}
+.movie-summary-container .summary-details > div > span {
+  background: #2f80ed;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%
+}
+.video-container .video .plyr {
+  border-radius: 1rem !important;
+}
+.video-container .controls {
+  gap: .5rem
+}
+.video-container .controls span {
+  transition: color, .5s, ease-in-out
+}
+.video-container .controls span:hover {
+  cursor: pointer;
+  color: #2f80ed
+}
+.video-container .controls span:not(span:first-of-type)::before {
+  content: "";
+  height: 10px;
+  width: 1px;
+  background: #2f80ed !important;;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: 5px;
+  margin: 0 .5rem 0 .1rem
+}
+.video-container .controls .bookmark i::after {
+  content: "Add to favourite";
+  font-weight: 400px !important;
+  margin-left: 1rem
+}
+
+/* // SEASON CONTAINER */
+.season-container .season-title span{
+  font-size: 1.2rem !important;
+}
+.season-container .season-title svg{
+  height: 20px;
+  stroke: #2f80ed;
+  fill: #000
+}
+.season-container .tv-show img {
+  border-radius: .5rem !important;
+}
+.season-container .genres h2  {
+  font-size: 1rem
+}
+.season-container .genres > div{
+  gap: 1rem;
+}
+.season-container .genres a {
+  color: #fff;
+  background: #151f30;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  text-transform: capitalize;
+  font-size: .9rem;
+  text-decoration: none;
+}
+.season-container .genres a:hover {
+  background: var(--primary) !important;
+}
+.comment-section-container li div {
+  cursor: pointer;
+  padding: 0 !important;
+  gap: .6rem;
+  margin-right: 1rem;
+  color: #85878c !important;
+  font-size: 1.6rem;
+  justify-content: center;
+  align-items: center;
+}
+.comment-section-container li div.active {
+  background: none !important;
+  color: #fff !important;
+}
+.comment-section-container li div:not(.active) span {
+  background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1), var(--success));
+  ;
+  color: #ddd
+}
+.comment-section-container li div span {
+  background: var(--primary);
+  padding: 0rem .2rem;
+  border-radius: .3rem;
+  font-size: 1rem
+}
+.message-box, .quoted-text-box {
+  background: #151f30;
+  min-height: 200px;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.message-box-header, .quoted-text-box-header {
+  gap: .3rem;
+  border-bottom: 1px solid #1f3250;
+  padding-bottom: 1rem
+}
+.message-box-header i, .quoted-text-box-header i {
+  background: #fff;
+  color: #000;
+  padding: .8rem 1rem;
+  border-radius: .6rem
+}
+.message-box-header svg {
+  height: 25px;
+  fill: #fff;
+}
+.message-box-header .star {
+  
+}
+.message-box-header .post-time, .quoted-text-box-header .post-time {
+  color: lightgray;
+  font-size: .9rem;
+}
+.message-box-body,.quoted-text-box-body {
+  border-bottom: 1px solid #1f3250;
+}
+.minus, .plus {
+  cursor: pointer
+}
+.minus svg {
+  stroke: #eb5757;
+}
+.plus svg {
+  stroke: #29b474;
+}
+.minus svg:hover, .plus svg:hover {
+  opacity: 100%
+}
+.minus svg, .plus svg {
+  height: 16px;
+  opacity: 80%
+}
+.add-comment {
+  border: 1px solid rgba(47,128,237,0.1);
+  border-radius: 1rem;
+}
+.add-comment textarea {
+  height: 12rem;
+  background: #151f30;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.add-comment textarea:focus {
+  background: #151f30;
+}
+button {
+  cursor: pointer
+}
+.add-comment button {
+  color: #fff;
+  transition: .5s ease;
+  transition-property: color, background;
+}
+.add-comment button:hover {
+  background: #fff !important;
+  color: #000
+}
+
+
+
+
+
+
+
+
