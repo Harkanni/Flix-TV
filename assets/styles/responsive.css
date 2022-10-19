@@ -126,6 +126,9 @@
   .summary-text {
     text-align: justify
   }
+  .message-box, .quoted-text-body {
+    text-align: justify
+  }
 }
 @media screen and (max-width: 465px) {
   body .video-container .video .plyr {
