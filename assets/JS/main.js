@@ -1,5 +1,5 @@
 // SEARCH BAR TOGGLING
-const searchIcon = document.querySelector(".utilities .fa4")
+const searchIcon = document.querySelector(".utilities .fa5")
 const searchModal = document.querySelector(".form-search")
 const closeModal = document.querySelector(".fa-window-close")
 searchIcon.addEventListener("click", () => {
